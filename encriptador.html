@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1bcc31f19c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--Página principal ------------------------------------------------------------------- -->
+
+    <main>
+
+        <div class="contenedor">
+
+            <header>
+                <img class="logo" src="imagenes\Logo.png" alt="Logotipo de Alura">
+            </header>
+
+            <div id="entrada">
+                <textarea id="input-texto" cols="100%" rows="100%" required
+                    placeholder="Ingrese aquí el texto para encriptar/desencriptar"></textarea>
+
+                <div class="entrada-btns">
+                    <div class="btn-item">
+                        <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+                        <button class="boton boton-encriptar"><i class="fa-solid fa-barcode"></i>Encriptar</button>
+                    </div>
+
+                    <div class="btn-item">
+                        <input type="text" id="clave-campo" placeholder="Ingrese la clave para desencriptar">
+                        <button class="boton boton-desencriptar"><i
+                                class="fa-solid fa-barcode"></i>Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="anuncio" class="salida">
+                <img src="imagenes\anuncio.png" alt="Figura de individuo viendo un diamante">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div id="resultados" class="salida oculto">
+                <textarea id="resultado" class="mostrar-area" cols="100%" rows="100%" readonly
+                    placeholder=""></textarea>
+                <button class="boton copiar-btn">Copiar texto encriptado</button>
+                <p class="clave-cifrado">La clave de cifrado es la siguiente:</p>
+                <input type="text" readonly id="clave-resultado" class="clave" placeholder="">
+                <button class="boton copiar-clave-btn">Copiar clave</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!--Pie de pagina ------------------------------------------------------------------- -->
+
+    <footer>
+        <p>Desarrollado por <span>&#129322 Tracy Mora C.</span></p>
+    </footer>
+
+    <script src="./main_script.js"></script>
+
+</body>
+
+</html>
