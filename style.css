@@ -9,7 +9,7 @@ body {
 
 body::after {
     content: "";
-    background: #F3F5FC url("../imagenes/back2.jpg") no-repeat center;
+    background: #F3F5FC url("./imagenes/back2.jpg") no-repeat center;
     background-size: cover;
     opacity: 0.5;
     top: 0;
