@@ -137,11 +137,10 @@ function ocultarAnuncio() {
 function copiar(elemento, mensaje) {
 
     let contenido = document.querySelector(elemento);
-
-    contenido.select();
     
+    contenido.select();
+    contenido.setSelectionRange(0, 99999); // Para dispositivos móviles
     navigator.clipboard.writeText(contenido.value);
-
     alert(mensaje);
 }
 
