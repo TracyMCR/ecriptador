@@ -139,7 +139,7 @@ function copiar(elemento, mensaje) {
     let contenido = document.querySelector(elemento);
 
     contenido.select();
-    contenido.setSelectionRange(0, 99999); // For mobile devices
+    
     navigator.clipboard.writeText(contenido.value);
 
     alert(mensaje);
