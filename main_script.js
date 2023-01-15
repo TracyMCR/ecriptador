@@ -138,12 +138,27 @@ function ocultarAnuncio() {
 }
 //----------------------------------------------------->
 function copiar(elemento, mensaje) {
+    let contenido = document.querySelector(elemento);
+    contenido.select();
+    contenido.setSelectionRange(0, 99999);
+    navigator.clipboard
+        .writeText(contenido.value)
+        .then(() => {
+            alert(mensaje);
+        })
+        .catch(() => {
+            alert("Algo salió mal");
+        });
+}
+
+
+/* function copiar(elemento, mensaje) {
 
     let contenido = document.querySelector(elemento);
 
     navigator.clipboard.writeText(contenido.value);
     alert(mensaje);
-}
+} */
 
 //----------------------------------------------------------------------------------->
 //----------------------------------------------------------------------------------->
@@ -166,9 +181,9 @@ desencriptarBoton.addEventListener("click", () => {
 });
 
 copiarTextoBoton.addEventListener("click", () => {
-    copiar("#resultado", "El texto encriptado se ha copiado al portatpapeles")
+    copiar("#resultado", "El texto encriptado se ha copiado al portapapeles")
 })
 
 copiarClaveBoton.addEventListener("click", () => {
-    copiar("#clave-resultado", "La clave de encriptado se ha copiado al portatpapeles")
+    copiar("#clave-resultado", "La clave de encriptado se ha copiado al portapapeles")
 })
