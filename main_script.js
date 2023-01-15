@@ -8,8 +8,8 @@ const desencriptarBoton = document.querySelector(".boton-desencriptar")
 const claveIngresada = document.querySelector("#clave-campo")
 const copiarTextoBoton = document.querySelector(".copiar-btn")
 const copiarClaveBoton = document.querySelector(".copiar-clave-btn")
-let textoEncriptado = [];
-let textoDesencriptado = [];
+let textoEncriptado = "";
+let textoDesencriptado = "";
 
 // Funciones ----------------------------------------------------->
 // ---------------------------------------------------------------> 
@@ -49,6 +49,7 @@ function encriptar() {
 
     clave = generarClave(caracteres);
     indicesClave = obtenerIndicesClave(clave);
+    textoEncriptado = "";
     textoAnalizar.value = textoAnalizar.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
     for (var i = 0; i < textoAnalizar.value.length; i++) {
@@ -87,6 +88,8 @@ function desencriptar() {
     var saltar = 0;
     clave = obtenerClaveUsuario();
     indicesClave = obtenerIndicesClave(clave);
+
+    textoDesencriptado = "";
     textoEncriptado = textoAnalizar.value;
 
     for (var i = 0; i < textoEncriptado.length; i++) {
@@ -137,9 +140,7 @@ function ocultarAnuncio() {
 function copiar(elemento, mensaje) {
 
     let contenido = document.querySelector(elemento);
-    
-    contenido.select();
-    contenido.setSelectionRange(0, 99999); // Para dispositivos móviles
+
     navigator.clipboard.writeText(contenido.value);
     alert(mensaje);
 }
