@@ -162,14 +162,30 @@ i {
 
 }
 
+.img-anuncio {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+
+}
+
+.img-ayuda {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+
+}
+
 #anuncio {
     justify-content: center;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 #anuncio h1,
 #anuncio p {
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 #resultados {
