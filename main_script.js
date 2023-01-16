@@ -151,15 +151,6 @@ function copiar(elemento, mensaje) {
         });
 }
 
-
-/* function copiar(elemento, mensaje) {
-
-    let contenido = document.querySelector(elemento);
-
-    navigator.clipboard.writeText(contenido.value);
-    alert(mensaje);
-} */
-
 //----------------------------------------------------------------------------------->
 //----------------------------------------------------------------------------------->
 
