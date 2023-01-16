@@ -9,7 +9,7 @@ body {
 
 body::after {
     content: "";
-    background: #F3F5FC url("./imagenes/back2.jpg") no-repeat center;
+    background: #F3F5FC url("./imagenes/back2.jpg") repeat-y center fixed;
     background-size: cover;
     opacity: 0.5;
     top: 0;
@@ -265,13 +265,14 @@ footer p span {
         height: 30vh;
     }
 
-    #anuncio img {
+    #anuncio img,
+    #ayuda img {
         display: none;
     }
 
     .salida {
         width: 100%;
-        height: 70vh;
+        height: 450px !important;
     }
 
     .mostrar-area {
@@ -313,7 +314,7 @@ footer p span {
 
     .salida {
         width: 100%;
-        height: 80vh;
+        height: 300px !important;
     }
 
     .mostrar-area {
