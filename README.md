@@ -30,10 +30,13 @@ ___
 - `Funcionalidad 3`: Copia al portapapeles fácil y rápida del texto encriptado y de la clave, mediante botones interactivos
 ___
 
+### :trophy:  Insignias
+
+![portada](/imagenes/cms_files_10224_1671210503Prancheta_3.png)
+___
+
 ### :computer:  Prueba la aplicación
 
 ### [Encriptador](https://tracymcr.github.io/encriptador)
 
-### :trophy:  Insignias
 
-![portada](/imagenes/cms_files_10224_1671210503Prancheta_3.png)
