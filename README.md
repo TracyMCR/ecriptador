@@ -33,3 +33,7 @@ ___
 ### :computer:  Prueba la aplicación
 
 ### [Encriptador](https://tracymcr.github.io/encriptador)
+
+### :trophy:  Insignias
+
+![portada](/imagenes/cms_files_10224_1671210503Prancheta_3.png)
